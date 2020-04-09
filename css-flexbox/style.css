@@ -1,0 +1,44 @@
+* {
+  font-family: verdana;
+  margin: 0;
+}
+
+body {
+  background: #eee;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  background: #fff;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  height: 800px;
+  /* works with the cross-axis */
+  align-items: center;
+}
+
+.box {
+  height: 100px;
+  flex: 0 0 100px;
+}
+
+.one {
+  background: red;
+  order: 2;
+}
+
+.two {
+  background: blue;
+  order: 1;
+}
+
+.three {
+  background: green;
+  order: 0;
+}
